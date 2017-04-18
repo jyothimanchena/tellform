@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+           <meta charset="utf-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+           <link href="./css/custom.css" rel="stylesheet">
+		   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+           <script>
+            function myFunction() 
+			{
+             print();
+            }
+           </script>
+		   <script>
+		   $(document).ready(function () {
+           $(document).on("click", ".square-radio", function () {
+           $(this).toggleClass("square-radio--clicked");
+           });
+          });
+		   </script>
+ 
+  
+    </head>
+    <body>
+	<!--first page start-->
+	<div class="container" style="width: 82%;">
+	      <div  class="well">
+	           <div class="row">
+			     <h4 align="center"><u><strong>Verification Information and policies</strong></u></h4>
+				 <ul style="padding-left:220px">
+                  <li>    <p>Each student is entitled to receive two verifications/transcript requests at no cost. After the initial<br> 
+                          two verifications/transcripts have been requested, each additional request is $3.00.</p>
+				 </li>
+                  <li>
+				    <strong>Ordering a Verification Online: (Enrollment Dates and Degree Verifications)</strong>
+					 <p>Enrollment date and Degree Verifications may be ordered online through National Student<br> 
+                     ClearingHouse. <br>
+                     To place an order, go to <a href="www.saddleback.edu">www.saddleback.edu</a>, choose “Admissions and Records” from the top<br>
+                     left menu, choose which student type you are and then choose“Verifications from the menu on <br>
+					 the left side. Choose the “Online” option and then click on the “National Student ClearingHouse” <br>
+					 logo. This is the quickest way to receive an enrollment date or degree verification; however, the<br>
+					 online request system does not accommodate the two free verifications. 
+
+					 </p>
+				  </li>
+                  <li>
+				   <strong>
+				   Ordering a Verification by Mail or In Person: (Detailed Enrollments and GPA Verifications)<br>
+				   </strong>
+				   <p>
+				   The attached Verification Request Form may be submitted by mail or in-person. Processing time<br>
+				   for these requests is 24 hours (Emergency) or 5 business days (Regular). Payment for requests <br>
+				   by mail is by <u>check only</u>.
+				   </p>
+				   <ul style="list-style-type:circle">
+                    <li> Regular Processing (5 business days) verifications are $3.00/copy </li>
+                    <li> Emergency Processing (1 business day) verifications are $5.00 + $3.00/copy </li>
+                    
+                  </ul>
+				  
+				  </li>
+				  <li>
+				  <p>Only coursework taken at Saddleback College will be verified. Verifications from other colleges,<br>
+				   including Irvine Valley College, must be requested from the respective institutions.
+				  
+				  </p> 
+				  </li>
+				  <li>
+				  <p>No verifications will be sent until all financial obligations have been met, including fines and fees.
+				  
+				  </p> 
+				  </li>
+				  <li>
+				  <p>Verifications ordered for pickup at Saddleback College will be held for only 30 days. After that <br>
+				     time, students are required to submit a new request with payment.
+				  
+				  </p> 
+				  </li>
+				  <li>
+				  <p>
+				  Saddleback College is not responsible for lost or misdirected mail.
+				  
+				  </p> 
+				  </li>
+				  <li>
+				  <p>
+				  In accordance with the Family Education Rights and Privacy Act of 1974, the college will not <br>
+				  release records to a third party. Only students themselves may personally order or pick up a<br>
+				  transcript. 
+				  
+				  </p> 
+				  </li>
+                </ul> 
+</div>		
+</div>	
+</div>	
+	<!--First Page end-->
+        <div class="container">
+	      <div  class="well">
+	           <div class="row">
+				<form>
+					<div class="col-sm-12"><!--class="col-sm-12"  removed from here-->
+						
+						<!--<div class="row">
+						
+						<span><button type="button" class="btn btn-sm btn-info center-block">Clear Form</button>
+						
+						<button type="button" class="btn btn-sm btn-info"  style="float: right;">Clear Form</button></span>
+					
+						</div>-->
+						
+                        <div class="col-xs-9 text-center">
+                            <div class="previous">
+                               <button type="reset" class="btn btn-default">
+                                Clear Form
+								
+                                </button>
+		  
+                            </div>
+                        </div>
+                        <div class="col-xs-3  text-right">   
+                            <div class="next">
+                                <button type="button" class="btn btn-default" id="btn-default_sucess" onclick="myFunction()">
+                                    Print
+                                </button>
+                            </div>
+    
+                        </div>
+	                    <br></br>
+	                    <h5 align="center"><strong>Student Information<strong></h5>
+	                    <table class="table table-striped table-bordered table-responsive">
+                         <thead>
+                            <tr>
+                              <th>1.Student Id Number</th>
+                              <th>2.Social Security Number(xxx-xx-xxxx)</th>
+                              <th>3.Date of Birth(mm/dd/yyyy)</th>
+                            </tr>
+                         </thead>
+                         <tbody>
+                          <tr>
+                            <td><div class="form-group">
+                               <input class="form-control"  type="text">
+                               </div>
+							  </td>
+                            <td><div class="form-group">   
+                                <input class="form-control" type="text">
+                                </div>
+							</td>
+                            <td><div class="form-group">
+                                <input class="form-control"  type="text">
+                                </div>
+							</td>
+                          </tr>
+      
+                         </tbody>
+	                     <thead>
+                          <tr>
+		                    <th>
+		                      4.Student's Name 
+		                      <span class="as"> Last </span>
+		                      <span class="as">First</span> 
+		                      <span class="as">MI</span>
+							 </th>
+		                     <th colspan="2">
+		                      5.Other Names Used
+		                     </th>
+		                  </tr>
+		                 </thead>
+		                  <tbody>
+		                   <tr>
+        
+                          <td>
+		                 <span class="input_field_padding"><div class="col-xs-3 col-sm-3 col-lg-3">
+                             <input class="form-control"  type="text">
+                           </div>
+						 </span>
+		                 <span class="input_field_padding"><div class="col-xs-3 col-sm-3 col-lg-3">
+                                <input class="form-control"  type="text">
+                                </div>
+						  </span>
+		                  <span class="input_field_padding"><div class="col-xs-3 col-sm-3 col-lg-3 ">
+                             <input class="form-control"  type="text">
+                             </div>
+						  </span>
+		                  </td>
+		                  <td colspan="2">
+						     <div class="form-group">
+                              <input class="form-control" id="inputdefault" type="text">
+                               </div>
+						     
+						  </td>
+        
+                          </tr>
+		
+		                     <thead>
+      
+                          <tr>
+		                  <th>
+		                 6.Mailing adress 
+		                 <span class="as"> Street </span>
+		                  <span class="as">City</span> 
+		                   <span class="as">state</span>
+		                   <span class="as">zipcode</span></th>
+		                  <th colspan="2">
+		                   7.Other Names Used
+		                 </th>
+		                  </tr>
+		                  </thead>
+						  </tbody>
+		                 <tbody>
+		                 <tr>
+        
+                          <td>
+		                  <span class="input_field_padding"><div class="form-group">
+   
+                             <input class="form-control"  type="text">
+                             </div>
+						  </span>
+		 
+		                   </td>
+		                    <td colspan="2"><span class="input_field_padding"><div class="form-group">
+                              <input class="form-control"  type="text" >
+                               </div></span>
+							</td>
+        
+                           </tr>
+	                     </tbody>
+    
+	
+                        </table>
+						  <h5 align="center"><strong>Verification Processing Information</strong></b></h5>				
+						
+						<table class="table table-striped table-bordered table-responsive">
+                         <thead>
+                            <tr>
+                              <th>8.Number of copies</th>
+                              <th>9.Type of processing</th>
+                              <th>10.Verification to be processed</th>
+                            
+                         </thead>
+                         <tbody>
+                          <tr>
+                            <td>
+							   <div class="form-group col-sm-4">
+                               <input class="form-control"  type="text" id="txt_border" size="4" maxlength="2">
+                               </div>
+							</td>
+                            <td>
+							 <div class="square-radio square-radio--clicked">
+                              <div class="square-radio--content">
+							  
+							  </div>
+							  
+                             </div>
+							 
+							 <span><i>Regular Processing-$3.00/copy(Approx.5 business days)</i></span><br>
+							  <i>The first two requests for verifications/transcripts are free.</i>
+  
+                             <br>
+
+                             <div class="square-radio">
+                               <div class="square-radio--content"></div>
+                            </div>
+							<i>Emergency processing-$5.00+$3.00/copy(Approx.1 business day))</i><br>
+							
+							</td>
+                            <td>
+							<i><center>(Please check one)</center></i>
+							 <div class="square-radio square-radio--clicked">
+                              <div class="square-radio--content">
+							  
+							  </div>
+							  
+                             </div>
+							 
+							 <i>Picked Up</i><br>
+							  
+  
+                             <br>
+
+                            <div class="square-radio">
+                               <div class="square-radio--content"></div>
+                            </div>
+							<i>Mailed</i><br>
+							
+							</td>
+                          </tr>
+      
+                         </tbody>
+						   <thead>
+						   <tr>
+						     <th>11.Type Of Verification</th>
+							 <th colspan="2">
+							 12.Mailing adress for verification(<span>if different from above</span>)
+							 </th>
+							 
+							 </tr>
+							 </thead>
+							 <tbody>
+							 <tr>
+							 <td>
+	                            <i><p>I am Completing my requirements during the following semester</p></i>
+							   <div class="row">
+							   <div class="col-md-3">
+							   <div class="square-radio">
+                               <div class="square-radio--content"></div>                             							   
+                            </div>Fall					
+							</div>
+							 <div class="col-md-3">
+							  <div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                             </div>Spring
+							 </div>
+							 <div class="col-md-3">
+							<div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                            </div>Summer							
+							</div>
+							<br>
+                             <div class="form-group col-sm-4">
+                               <span>Year:<input type="textbox" id="txt_border"  size="4" maxlength="4"></span>
+                               </div>
+							   <br></br>
+							   <div class="col-md-3">
+							<div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                            </div>Enrollments<br>
+							<div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                            </div>GPA
+							<input class="form-control"  type="text" id="txt_border">
+							</div>
+							 </div>	
+							 
+							 </td>
+							 
+							 <td rowspan="2" colspan="2">
+							 To:
+							  Name:<input type="textbox" id="txt_border" size="34"> <br>
+							  Institution/co :<input type="textbox" id="txt_border" size="30"><br>
+							  Adress1:<input type="textbox" id="txt_border" size="35"><br>
+							  Adress2:<input type="textbox" id="txt_border" size="35"><br>
+							          <span style="padding-left:21px";><input type="textbox" id="txt_border" size="40"><span><br>
+							  City :<input type="textbox" id="txt_border" size="38" style="padding-left:1px";><br>
+							  State/Country :<input type="textbox" id="txt_border" size="30"><br>
+							  Zip/PostalCode:<input type="textbox" style="padding-left:1px"; id="txt_border" size="29" >
+							  
+							 
+							 </td>
+						</tr>
+						
+							 
+						   
+						   <thead>
+						   <th>13.Method Of Payment</th>
+						   <th colspan="2">14.Please complete the form,print,sign your full name to<br> authorize release of transcript</th>
+						   </thead>
+						   <tr>
+						   <td>
+						   <div class="square-radio">
+                               <div class="square-radio--content"></div>
+                            </div>Credit Card(in-person requests only)
+							<div class="square-radio">
+                               <div class="square-radio--content"></div>
+                            </div>Check
+							<div class="square-radio">
+                               <div class="square-radio--content"></div>
+                            </div>Cash(in-person only)
+						   
+						   </td>
+						   </tr>
+						  
+						   </tbody>
+						   <tr>
+						   <td colspan="-2">
+						   <i>
+						   For office use only
+						   </i>
+						   <br>
+						   </br>
+						   <i>
+						   
+						   Rec's By:
+						   </i>
+						   </td>
+						   <td colspan="2">
+						   <hr>
+						 Student's Signature
+						  <span style="padding-left:9cm";>Date</span>
+						   
+						   
+						   </div>
+						    
+						  
+						  
+						   
+                           
+						   
+						   </td>
+						   
+						   
+						   </tr>
+						   
+                             
+							 
+						   </table>
+						   
+						   
+						   <!--
+						   <thead >
+						   <tr>
+						   <th>12.Mailing adress for verification(<span>if different from above</span>)</th>
+						   </tr>
+						   </thead>
+						   <tbody>
+						    <tr>
+							 <td>
+							  To:
+							  Name:<input type="textbox" id="txt_border" size="30"> <br>
+							  Institution/co:<input type="textbox" id="txt_border" size="30"><br>
+							  Adress1:<input type="textbox" id="txt_border" ><br>
+							  Adress2:<input type="textbox" id="txt_border" ><br>
+							  <input type="textbox" id="txt_border" ><br>
+							  City:<input type="textbox" id="txt_border" ><br>
+							  State/Country:<input type="textbox" id="txt_border"><br>
+							  Zip/PostalCode:<input type="textbox" id="txt_border" >
+							 </td>
+							</tr>
+						   </tbody>
+						   -->
+						   
+						   
+						   
+						    
+						   
+						   
+	                         <!--<tbody>
+							  <tr>
+							   <td>
+							   <i><p>I am Completing my requirements during the following semester</p></i>
+							   <div class="row">
+							   <div class="col-md-3">
+							   <div class="square-radio">
+                               <div class="square-radio--content"></div>                             							   
+                            </div>Fall					
+							</div>
+							 <div class="col-md-3">
+							  <div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                             </div>Spring
+							 </div>
+							 <div class="col-md-3">
+							<div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                            </div>Summer							
+							</div>
+							
+							
+							<br>
+							</br>
+							 
+							   <div class="form-group col-sm-4" >
+                               <input class="form-control"  type="text" id="txt_border" size="4" maxlength="4">
+                               </div>
+							   <br></br>
+							   <div class="col-md-3">
+							<div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                            </div>Enrollments<br>
+							<div class="square-radio">
+                               <div class="square-radio--content"></div>                              							   
+                            </div>GPA
+							
+							</div>
+							 </div>
+							 <input class="form-control"  type="text" id="txt_areaborder">
+							 
+							
+														
+							
+							
+							   </td>
+							   							 
+                          
+							  </tr>
+							  <thead>
+							    <th>
+								13.Method of Payment
+								</th>
+							  </thead>
+							  <tbody>
+							    <td>
+								
+							         <div class="square-radio">
+                                        <div class="square-radio--content"></div>                              							   
+                                            </div><span>Credit Card(in-person requests only)</span>
+							           <div class="square-radio">
+                                          <div class="square-radio--content"></div>                              							   
+                                      </div>Check
+								<div class="square-radio">
+                                   <div class="square-radio--content"></div>                              							   
+                                    </div>Cash(in-person only)							
+							     
+								
+								</td>
+							  </tbody>
+                             </tbody>-->
+							 
+							  
+							 
+                              
+      
+                          
+    
+	
+                         <div class="col-xs-9 text-center">
+                            <div class="previous">
+                               <button type="reset" class="btn btn-default">
+                                Clear Form
+								
+                                </button>
+		  
+                            </div>
+                        </div>
+                        <div class="col-xs-3  text-right">   
+                            <div class="next">
+                                <button type="button" class="btn btn-default" id="btn-default_sucess"onclick="myFunction()">
+                                    Print
+                                </button>
+                            </div>
+    
+                        </div>
+				
+									
+					</div>
+				</form> 
+				</div>
+				
+	       </div>
+		    <a href="table4.html">nextpage</a>
+	      </div>
+	          </body>
+</html>
